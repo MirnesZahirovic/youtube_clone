@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Video title...</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <!-- RIGHT SIDE OF HEADER -->
+
+      <a href=""
+        ><img src="../assets/menu.svg" alt="Menu" class="header__menu__side"
+      /></a>
+      <a href="../">
+        <img src="../assets/logo.svg" alt="Logo" class="header__logo"
+      /></a>
+
+      <!-- CENTERED SEARCH BAR  -->
+
+      <form class="header__search">
+        <input type="text" class="header__search-input" placeholder="Search" />
+        <button class="header__search__btn">
+          <img
+            src="../assets/search.svg"
+            alt="Search"
+            class="header__search__btn-icon"
+          />
+        </button>
+        <button class="header__search__voice">
+          <img
+            src="../assets/voice.svg"
+            alt="Voice search"
+            class="header__search__voice__icon"
+          />
+        </button>
+      </form>
+
+      <!-- HEADER NAV BAR WITH CREATE, NOTIFICATIONS AND PROFILE ICONS -->
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <img
+                src="../assets/create.svg"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <img
+                src="../assets/notification.svg"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-icon-profile">
+              <img
+                src="../assets/profile-image.jfif"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+            <div class="header__nav-item-profile">
+              <div class="header__nav-item-profile-about">
+                <div class="header__nav-item-profile-about-image">
+                  <img src="../assets/profile-image.jfif" alt="profile" />
+                </div>
+                <div class="header__nav-item-profile-about-info">
+                  <span class="header__nav-item-profile-about-info-name"
+                    >Mirnes Zahirović</span
+                  >
+                  <span class="header__nav-item-profile-about-info-email"
+                    >contact@mirneszahirovic.me</span
+                  >
+                  <a href="#">Manage your Google Account</a>
+                </div>
+              </div>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/your-channel.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Your channel</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/youtube-studio.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >YouTube Studio</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/switch-accounts.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Switch accounts</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/signout.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Sign out</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/pruchases.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Purchases and memberships
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/your-data.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Your data in YouTube</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/appearance.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Appearance: Device theme
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/language.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Language: British English
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/restricted.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Restricted Mode: Off
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/location.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Location: Bosnia and Herzegovina
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/keyboard-shortcuts.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Keyboard shortcuts
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/settings.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Settings
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/help.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Help
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="../assets/send-feedback.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Send feedback
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- TABLET AND MOBILE HEADER-->
+
+    <header class="header__mobile">
+      <div class="header__mobile__search">
+        <input type="text" class="header__mobile__search-input" />
+      </div>
+      <div class="header__mobile__logo">
+        <img
+          src="../assets/logo.svg"
+          alt="Logo"
+          class="header__mobile__logo-img"
+        />
+      </div>
+      <div class="header__mobile__right-side">
+        <img
+          src="../assets/search.svg"
+          alt="Search"
+          class="header__mobile__right-side-search-img"
+        />
+        <img
+          src="../assets/profile-image.jfif"
+          alt=""
+          class="header__mobile__right-side-profile"
+        />
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__video">
+        <div class="main__video__player">
+          <div class="main__video__player__controls">
+            <div class="main__video__player__controls__track">
+              <div class="main__video__player__controls__track-current"></div>
+            </div>
+            <div class="main__video__player__controls__first-group">
+              <img
+                src="./assets/pause.svg"
+                alt=""
+                class="main__video__player__controls__first-group-pause"
+              />
+              <img
+                src="./assets/next.svg"
+                alt=""
+                class="main__video__player__controls__first-group-next"
+              />
+              <img
+                src="./assets/volume.svg"
+                alt=""
+                class="main__video__player__controls__first-group-volume"
+              />
+              <span class="main__video__player__controls__first-group-time"
+                >1:45 / 4:12</span
+              >
+            </div>
+            <div class="main__video__player__controls__second-group">
+              <img
+                src="./assets/autoplay.svg"
+                alt=""
+                class="main__video__player__controls-second-group-autplay"
+              />
+              <img
+                src="./assets/subtitles.svg"
+                alt=""
+                class="main__video__player__controls-second-group-subtitles"
+              />
+              <img
+                src="./assets/settings.svg"
+                alt=""
+                class="main__video__player__controls-second-group-settings"
+              />
+              <img
+                src="./assets/pip.svg"
+                alt=""
+                class="main__video__player__controls-second-group-pip"
+              />
+              <img
+                src="./assets/cinema.svg"
+                alt=""
+                class="main__video__player__controls-second-group-cinema"
+              />
+              <img
+                src="./assets/fullscreen.svg"
+                alt=""
+                class="main__video__player__controls-second-group-fullscreen"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="main__video__about">
+          <div class="main__video__about__title">
+            <a class="main__video__about__title-tag" href="#"
+              >JavaScript Tutorials</a
+            >
+            <h4 class="main__video__about__title-text">
+              Learn JavaScript - Full Course for Beginners
+            </h4>
+          </div>
+          <div class="main__video__about__actions">
+            <span class="main__video__about__actions-views"
+              >14,531,373 views
+            </span>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/like.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text">223K</span>
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/dislike.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text"
+                >DISLIKE</span
+              >
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/share.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text">SHARE</span>
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/download.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text"
+                >DOWNLAOD</span
+              >
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/thanks.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text"
+                >THANKS</span
+              >
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/clip.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text">CLIP</span>
+            </button>
+            <button class="main__video__about__actions-button">
+              <img
+                src="./assets/save.svg"
+                alt=""
+                class="main__video__about__actions-button-img"
+              />
+              <span class="main__video__about__actions-button-text">SAVE</span>
+            </button>
+          </div>
+          <div class="main__video__about__description">
+            <div class="main__video__about__description__heading">
+              <div class="main__video__about__description__heading-channel">
+                <img
+                  src="../assets/profile-image.jfif"
+                  alt=""
+                  class="main__video__about__description__heading-channel-img"
+                />
+                <div
+                  class="main__video__about__description__heading-channel-about"
+                >
+                  <span
+                    class="main__video__about__description__heading-channel-about-name"
+                    >freeCodeCamp.org</span
+                  >
+                  <span
+                    class="main__video__about__description__heading-channel-about-subs"
+                    >7.15M subscribers</span
+                  >
+                </div>
+              </div>
+              <div
+                class="main__video__about__description__heading-channel-actions"
+              >
+                <button
+                  class="main__video__about__description__heading-channel-actions-join"
+                >
+                  JOIN
+                </button>
+                <button
+                  class="main__video__about__description__heading-channel-actions-subscribe"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+            <div class="main__video__about__description__box">
+              <p class="main__video__about__description__box-text">
+                This complete 134-part JavaScript tutorial for beginners will
+                teach you everything you need to know to get started with the
+                JavaScript programming language.
+              </p>
+              <a href="#" class="main__video__about__description__box_show-more"
+                >SHOW MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="main__video__comments">
+          <div class="main__video__comments__heading">
+            <span class="main__video__comments__heading-comments-number"
+              >8,051 Comments</span
+            >
+            <div class="main__video__comments__heading-sort">
+              <img
+                src="./assets/sort-commetns.svg"
+                alt=""
+                class="main__video__comments__heading-sort-img"
+              />
+              <span class="main__video__comments__heading-sort-text"
+                >SORT BY</span
+              >
+            </div>
+          </div>
+          <div class="main__video__comments__add">
+            <img
+              src="../assets/profile-image.jfif"
+              alt=""
+              class="main__video__comments__add-channel-image"
+            />
+            <div class="main__video__comments__add-field">
+              <input
+                type="text"
+                class="main__video__comments__add-field-input"
+                placeholder="Add Comment"
+              />
+              <div class="main__video__comments__add-field__actions">
+                <span class="main__video__comments__add-field__actions-emoji"
+                  >😄</span
+                >
+                <button
+                  class="main__video__comments__add-field__actions-cancel"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="main__video__comments__add-field__actions-comment"
+                >
+                  Comment
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__video__comments__all">
+            <div class="main__video__comments__all-comment">
+              <img
+                src="../assets/profile-image.jfif"
+                alt=""
+                class="main__video__comments__all-comment-img"
+              />
+              <div class="main__video__comments__all__comment__content">
+                <div
+                  class="main__video__comments__all__comment__content__heading"
+                >
+                  <div
+                    class="main__video__comments__all__comment__content__heading"
+                  >
+                    <span
+                      class="main__video__comments__all__comment__content__heading-channel"
+                      >Zizyo</span
+                    >
+                    <span
+                      class="main__video__comments__all__comment__content__heading-time"
+                      >3 days ago</span
+                    >
+                  </div>
+                </div>
+                <span class="main__video__comments__all__comment__content-text">
+                  Thank you! This is a very helpful tutorial.
+                </span>
+                <div
+                  class="main__video__comments__all__comment__content__actions"
+                >
+                  <button
+                    class="main__video__comments__all__comment__content__actions-like"
+                  >
+                    <img
+                      src="./assets/like.svg"
+                      alt=""
+                      class="main__video__comments__all__comment__content-actions-like-img"
+                    />
+                    18
+                  </button>
+                  <button
+                    class="main__video__comments__all__comment__content__actions-like"
+                  >
+                    <img src="./assets/dislike.svg" alt="" />
+                  </button>
+                  <span
+                    class="main__video__comments__all__comment__content__actions-reply"
+                    >REPLY</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__suggestions"></div>
+    </main>
+    <footer class="footer__mobile">
+      <nav class="footer__mobile__nav">
+        <ul class="footer__mobile__nav-list">
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="../assets/home.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text">Home</span>
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="../assets/shorts.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Shorts</span
+              >
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="../assets/subscriptions.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Subscirptions</span
+              >
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="../assets/library.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Library</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

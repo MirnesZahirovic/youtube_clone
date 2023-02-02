@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>YouTube</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <!-- RIGHT SIDE OF HEADER -->
+
+      <a href=""
+        ><img src="./assets/menu.svg" alt="Menu" class="header__menu__side"
+      /></a>
+      <a href="#">
+        <img src="./assets/logo.svg" alt="Logo" class="header__logo"
+      /></a>
+
+      <!-- CENTERED SEARCH BAR  -->
+
+      <form class="header__search">
+        <input type="text" class="header__search-input" placeholder="Search" />
+        <button class="header__search__btn">
+          <img
+            src="./assets/search.svg"
+            alt="Search"
+            class="header__search__btn-icon"
+          />
+        </button>
+        <button class="header__search__voice">
+          <img
+            src="./assets/voice.svg"
+            alt="Voice search"
+            class="header__search__voice__icon"
+          />
+        </button>
+      </form>
+
+      <!-- HEADER NAV BAR WITH CREATE, NOTIFICATIONS AND PROFILE ICONS -->
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <img
+                src="./assets/create.svg"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <img
+                src="./assets/notification.svg"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-icon-profile">
+              <img
+                src="./assets/profile-image.jfif"
+                alt="Create"
+                class="header__nav-icon"
+              />
+            </a>
+            <div class="header__nav-item-profile">
+              <div class="header__nav-item-profile-about">
+                <div class="header__nav-item-profile-about-image">
+                  <img src="./assets/profile-image.jfif" alt="profile" />
+                </div>
+                <div class="header__nav-item-profile-about-info">
+                  <span class="header__nav-item-profile-about-info-name"
+                    >Mirnes Zahirović</span
+                  >
+                  <span class="header__nav-item-profile-about-info-email"
+                    >contact@mirneszahirovic.me</span
+                  >
+                  <a href="#">Manage your Google Account</a>
+                </div>
+              </div>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/your-channel.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Your channel</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/youtube-studio.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >YouTube Studio</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/switch-accounts.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Switch accounts</span
+                      >
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/signout.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Sign out</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/pruchases.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Purchases and memberships
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/your-data.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Your data in YouTube</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/appearance.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Appearance: Device theme
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/language.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Language: British English
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/restricted.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Restricted Mode: Off
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/location.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Location: Bosnia and Herzegovina
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/keyboard-shortcuts.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Keyboard shortcuts
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/settings.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Settings
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="header__nav-item-profile-nav">
+                <ul class="header__nav-item-profile-nav-list">
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/help.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Help
+                      </span>
+                    </a>
+                  </li>
+                  <li class="header__nav-item-profile-nav-list-item">
+                    <a
+                      href="#"
+                      class="header__nav-item-profile-nav-list-item-link"
+                    >
+                      <img
+                        src="./assets/send-feedback.svg"
+                        alt=""
+                        class="header__nav-item-profile-nav-list-item-link-img"
+                      />
+                      <span
+                        class="header__nav-item-profile-nav-list-item-link-text"
+                        >Send feedback
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- TABLET AND MOBILE HEADER-->
+
+    <header class="header__mobile">
+      <div class="header__mobile__search">
+        <input type="text" class="header__mobile__search-input" />
+      </div>
+      <div class="header__mobile__logo">
+        <img
+          src="./assets/logo.svg"
+          alt="Logo"
+          class="header__mobile__logo-img"
+        />
+      </div>
+      <div class="header__mobile__right-side">
+        <img
+          src="./assets/search.svg"
+          alt="Search"
+          class="header__mobile__right-side-search-img"
+        />
+        <img
+          src="./assets/profile-image.jfif"
+          alt=""
+          class="header__mobile__right-side-profile"
+        />
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+      <!-- NAVIGATION ON LEFT SIDE OF MAIN CONTENT -->
+
+      <nav class="main__nav">
+        <!-- FIRST GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/home.svg"
+                alt="Home"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Home</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/shorts.svg"
+                alt="Shorts"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Shorts</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/subscriptions.svg"
+                alt="Subscriptions"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Subscriptions</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- SECOND GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/library.svg"
+                alt="Library"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Library</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/history.svg"
+                alt="History"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">History</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/your-videos.svg"
+                alt="Your videos"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Your videos</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/watch-later.svg"
+                alt="Watch later"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Watch Later</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/liked-videos.svg"
+                alt="Liked videos"
+                class="main__nav__list-icon"
+              />
+              <span class="main__nav__list-text">Liked videos</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- THIRD GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <span class="main__nav__list__title">SUBSCRIPTIONS</span>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile1.jpg"
+                alt="Hatunic"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Hatunic Guitar</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile2.jpg"
+                alt="History"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Karton revolucija</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile3.jpg"
+                alt="Your videos"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Akshay Saini</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile4.jpg"
+                alt="Watch later"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">cysecor</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile5.jpg"
+                alt="Liked videos"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">CodingNepal</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile6.jpg"
+                alt="Balkan Code"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">BalkanCode</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/profile7.jpg"
+                alt="Online Tutorials"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Online Tutorials</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- FOURTH GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <span class="main__nav__list__title">EXPLORE</span>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/trending.svg"
+                alt="Trending"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Trending</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/music.svg"
+                alt="Trending"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Music</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/films.svg"
+                alt="Trending"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Films</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/gaming.svg"
+                alt="Trending"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Gaming</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/sport.svg"
+                alt="Trending"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Sport</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- FIFT GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <span class="main__nav__list__title">MORE FROM YOUTUBE</span>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/yt-premium.svg"
+                alt="YouTube Premium"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">YouTube Premium</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/creator-studio.svg"
+                alt="Creator Studio"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Creator Studio</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/yt-music.svg"
+                alt="YouTube Music"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">YouTube Music</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/yt-kids.svg"
+                alt="YouTube Kids"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">YouTube Kids</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/yt-tv.svg"
+                alt="YouTube TV"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">YouTube TV</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- SIX GROUP OF NAV LIST -->
+
+        <ul class="main__nav__list">
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/settings.svg"
+                alt="Settings"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Settings</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/report-history.svg"
+                alt="Report history"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Report history</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/help.svg"
+                alt="Help"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Help</span>
+            </a>
+          </li>
+          <li class="main__nav__list-item">
+            <a href="#" class="main__nav__list-link">
+              <img
+                src="./assets/send-feedback.svg"
+                alt="Send feedback"
+                class="main__nav__list-icon-profile"
+              />
+              <span class="main__nav__list-text">Send feedback</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- NAV FOOTER -->
+
+        <div class="main__nav__footer">
+          <div class="main__nav__footer__links">
+            <a href="#">About</a>
+            <a href="#">Press</a>
+            <a href="#">Copyright</a>
+            <a href="#">Contact us</a>
+            <a href="#">Creator</a>
+            <a href="#">Advertise</a>
+            <a href="#">Developers</a>
+          </div>
+          <div class="main__nav__footer__links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Policy & Safety</a>
+            <a href="#">How YouTube Works</a>
+            <a href="#">Test new features</a>
+          </div>
+          <span class="main__nav__footer__copyright"
+            >&copy; 2023 Google LLC
+          </span>
+        </div>
+      </nav>
+
+      <nav class="main__nav__tablet">
+        <ul class="main__nav__tablet-list">
+          <li class="main__nav__tablet-list-item">
+            <a class="main__nav__tablet-list-item-link" href="#"
+              ><img
+                src="./assets/home.svg"
+                alt=""
+                class="main__nav__tablet-list-item--link-img"
+              />
+              <span class="main__nav__tablet-list-item-link-text">Home</span></a
+            >
+          </li>
+          <li class="main__nav__tablet-list-item">
+            <a class="main__nav__tablet-list-item-link" href="#"
+              ><img
+                src="./assets/shorts.svg"
+                alt=""
+                class="main__nav__tablet-list-item-link-img"
+              />
+              <span class="main__nav__tablet-list-item-link-text"
+                >Shorts</span
+              ></a
+            >
+          </li>
+          <li class="main__nav__tablet-list-item">
+            <a class="main__nav__tablet-list-item-link" href="#"
+              ><img
+                src="./assets/subscriptions.svg"
+                alt=""
+                class="main__nav__tablet-list-item-link-img"
+              />
+              <span class="main__nav__tablet-list-item-link-text"
+                >Subscriptions</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- MAIN VIDEOS CONTAINER -->
+
+      <div class="main__videos__container">
+        <!-- VIDEOS CATEGORIES -->
+
+        <nav class="main__videos__container__categories">
+          <ul class="main__videos__container__categories-list">
+            <li
+              class="main__videos__container__categories-list-item active__link"
+            >
+              All
+            </li>
+            <li class="main__videos__container__categories-list-item">Music</li>
+            <li class="main__videos__container__categories-list-item">Mixes</li>
+            <li class="main__videos__container__categories-list-item">
+              Dance music
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Crvena jabuka
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Albums
+            </li>
+            <li class="main__videos__container__categories-list-item">Live</li>
+            <li class="main__videos__container__categories-list-item">
+              Gadgets
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Folk Music
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Gaming
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Musical keyboard
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              JavaScript
+            </li>
+            <li class="main__videos__container__categories-list-item">
+              Computer programming
+            </li>
+          </ul>
+        </nav>
+
+        <!-- VIDEOS CONTAINER - FIRST GROUP-->
+
+        <div class="main__videos__container__videos">
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/marinaviskovic.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  MARINA VISKOVIC - SUPERHEROJ | MOMENTUM 2023
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Marina Viskovic Official
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  33K views • 1 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/2.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/cilest.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  MORAŠ DA SI LUD DA DAŠ PARE NA OVO
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Cile ST
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  50K views • 1 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/3.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Stoja - MIX 2023
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Skofi
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  3.8K views • 20 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/4.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/marty.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  How much you can make as a Front End Developer | Salary
+                  Revealed
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Marty
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  16K views • 10 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/5.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/kartonrevolucija.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Šutimo, a druga smo najsiromašnija država Evrope - Karton
+                  revolucija
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Karton Revolucija TV
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  1.4K views • 7 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/6.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/linustech.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Your Old PC is Your New Server
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Linus Tech Tips
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  3.9M views • 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/7.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/massimo.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Da mogu
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Massimo Savić - Topic
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  118K views • 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/8.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/onlinetutorials.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Html CSS & JavaScript Animation & Hover Effects
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Online Tutorials
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  4.4K views • 23 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHORTS CONTAINER -->
+        <div class="main__videos__container__shorts__container">
+          <div class="main__videos__container__shorts__container-logo">
+            <img src="./assets/shorts-home.svg" alt="Shorts-logo" />
+            <p class="main__videos__container__shorts__container-logo-text">
+              Shorts
+            </p>
+          </div>
+          <div class="main__videos__container__shorts__container__shorts">
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/1s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                How to deploy your website for free...
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                185 views
+              </p>
+            </div>
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/2s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                AI će zamijeniti programere?
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                1.6K views
+              </p>
+            </div>
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/3s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                Feminizam - Nikea Vučetić
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                274K views
+              </p>
+            </div>
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/4s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                ChatGPT AI INSANE! Create Website with...
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                163K views
+              </p>
+            </div>
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/5s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                Tonska proba za početak koncerta...
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                761K views
+              </p>
+            </div>
+            <div
+              class="main__videos__container__shorts__container__shorts-short"
+            >
+              <img
+                src="./assets/videos/6s.webp"
+                alt="Short"
+                class="main__videos__container__shorts__container__shorts-short-thumbnail"
+              />
+              <h4
+                class="main__videos__container__shorts__container__shorts-short-title"
+              >
+                html loader
+              </h4>
+              <p
+                class="main__videos__container__shorts__container__shorts-short-views"
+              >
+                243K views
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECOND VIDEO GROUP  -->
+
+        <div
+          class="main__videos__container__videos main__videos__container__videos__second-group"
+        >
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/9.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/croatiarecords.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Arsen Dedić - Ne plači (Official lyric video)
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Croatia Records
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  1.4K views • 21 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/10.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/hrtglazba.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Parni Valjak - 30 godina (i to bi bilo to) - drugi dio
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  HRT Glazba
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  406K views • 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/11.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img
+                  src="./assets/videos/techworldwithnana.jpg"
+                  alt="Profile"
+                />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Azure DevOps Tutorial for Beginners | CI/CD with Azure
+                  Pipelines
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  TechWorld with Nana
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  303K views • 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/12.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/bajtbox.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  KAKO JE SVE POČELO - Sony PlayStation 1
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Bajtbox
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  31K views • 2 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/13.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/davegray.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  React Redux Full Course for Beginners | Redux Toolkit
+                  Complete...
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Dave Gray
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  175K views • 8 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/14.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/webdevcody.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Is ChatGPT actually useful for coding?;
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Web Dev Cody
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  196K views • 1 month ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/15.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/awesome.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  C5 dev trends to follow in 2023
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Awesome
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  46K views • 3 weeks ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/16.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/videos/freecodecamp.jpg" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Learn Python GUI Development for Desktop - PySide6 and Qt
+                  Tutorial
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  freeCodeCamp.org
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  103K views • 1 month ago
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--
+            Hello
+          -->
+          <!--           
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main__videos__container__videos-video">
+            <img
+              src="./assets/videos/1.webp"
+              alt="Thumbnail"
+              class="main__videos__container__videos-video-thumbnail-img"
+            />
+            <div class="main__videos__container__videos-video-info">
+              <div
+                class="main__videos__container__videos-video-info-publisher-image"
+              >
+                <img src="./assets/profile-image.jfif" alt="Profile" />
+              </div>
+              <div class="main__videos__container__videos-video-info-other">
+                <h3
+                  class="main__videos__container__videos-video-info-other-title"
+                >
+                  Can ChatGPT write good CSS?
+                </h3>
+                <p
+                  class="main__videos__container__videos-video-info-other-publisher"
+                >
+                  Kevin Powwel
+                </p>
+                <p
+                  class="main__videos__container__videos-video-info-other-views"
+                >
+                  128K views • 2 days ago
+                </p>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer__mobile">
+      <nav class="footer__mobile__nav">
+        <ul class="footer__mobile__nav-list">
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="./assets/home.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text">Home</span>
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="./assets/shorts.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Shorts</span
+              >
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="./assets/subscriptions.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Subscirptions</span
+              >
+            </a>
+          </li>
+          <li class="footer__mobile__nav-list-item">
+            <a href="#" class="footer__mobile__nav-list-item-link">
+              <img
+                src="./assets/library.svg"
+                alt=""
+                class="footer__mobile__nav-list-item-link-img"
+              />
+              <span class="footer__mobile__nav-list-item-link-text"
+                >Library</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

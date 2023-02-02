@@ -505,6 +505,61 @@ a {
 .main__video__comments__all {
   display: flex;
   flex-direction: column;
+  color: white;
+}
+
+.main__video__comments__all-comment {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.main__video__comments__all-comment-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.main__video__comments__all__comment__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main__video__comments__all__comment__content__heading-channel {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main__video__comments__all__comment__content__heading-time {
+  font-size: 0.8rem;
+}
+
+.main__video__comments__all__comment__content__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.main__video__comments__all__comment__content__actions-like {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main__video__comments__all__comment__content__actions-dislike {
+  cursor: pointer;
+}
+
+.main__video__comments__all__comment__content__actions-reply {
+  font-size: 0.9rem;
+  color: #a7a99d;
+  cursor: pointer;
 }
 
 /* FOOTER */

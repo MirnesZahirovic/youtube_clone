@@ -373,6 +373,12 @@ a {
   background-color: #383838;
   border-radius: 50px;
   border: 2px solid #484848;
+  cursor: pointer;
+}
+
+.main__videos__container__categories-list-item:hover {
+  background-color: #6f6f6f8e;
+  transition: 300ms;
 }
 
 .active__link {

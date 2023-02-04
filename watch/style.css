@@ -834,6 +834,10 @@ a {
 }
 
 @media only screen and (max-width: 680px) {
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+
   .main__video__player__controls__first-group-volume {
     display: none;
   }
@@ -873,6 +877,11 @@ a {
 
   .header__mobile__search {
     display: none;
+  }
+
+  .main__suggestions {
+    padding: 1rem 0.5rem;
+    padding-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 480px) {

@@ -833,6 +833,48 @@ a {
   }
 }
 
+@media only screen and (max-width: 680px) {
+  .main__video__player__controls__first-group-volume {
+    display: none;
+  }
+
+  .main__video__player__controls-second-group-pip {
+    display: none;
+  }
+
+  .main__video__player__controls-second-group-cinema {
+    display: none;
+  }
+
+  .main__video__about__description__heading {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .main__video__about__description__box {
+    padding: 0.5rem;
+  }
+
+  .main__video__about__description__heading-channel-actions {
+    flex-basis: 100%;
+  }
+
+  .main__video__about__actions {
+    overflow-x: scroll;
+  }
+
+  .main__video__about__actions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main__video__player {
+    height: 30vh;
+  }
+
+  .header__mobile__search {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px) {
   .header__mobile__search {
     display: none;
